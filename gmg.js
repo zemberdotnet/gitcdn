@@ -91,7 +91,7 @@ line = d3.line()
 
 
 
-    const svg = d3.select("body")
+    const svg = d3.select(".content-wrapper")
         .append("svg")
         .attr("viewBox", [0, 0, width, height])
         .style("overflow", "visible");
