@@ -115,7 +115,10 @@ line = d3.line()
         .attr("d", d => line(d.values));
   
     svg.call(hover, path);
+    console.log("finished chart");
     return svg.node();
+
+
     
 }
 
@@ -171,3 +174,4 @@ function left() {
 }
 
 d3.json('https://raw.githubusercontent.com/zemberdotnet/gitcdn/master/output.json').then(chart);
+console.log("completed chart");
