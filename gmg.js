@@ -91,7 +91,7 @@ line = d3.line()
 
 
 
-    const svg = d3.select(".content-wrapper")
+    const svg = d3.select(".content-wrapperc")
         .append("svg")
         .attr("viewBox", [0, 0, width, height])
         .style("overflow", "visible");
@@ -170,4 +170,4 @@ function left() {
     dot.attr("display", "none");
 }
 
-d3.json('output.json').then(chart);
+d3.json('https://raw.githubusercontent.com/zemberdotnet/gitcdn/master/output.json').then(chart);
