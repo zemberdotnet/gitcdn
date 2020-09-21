@@ -160,7 +160,7 @@ function moved() {
     const s = d3.least(datas.series, d => Math.abs(d.values[i] - ym));
     path.attr("stroke", d => d === s ? null : "#ddd").filter(d => d === s).raise();
     dot.attr("transform", `translate(${x(datas.dates[i])},${y(s.values[i])})`);
-    dot.select("text").text(s.values[i]);
+    dot.select("text").text(s.name + " " + s.values[i]);
 }
 
 function entered() {
